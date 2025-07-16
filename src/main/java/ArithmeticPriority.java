@@ -12,7 +12,7 @@ public class ArithmeticPriority {
         System.out.print("c: ");
         int c = input.nextInt();
 
-        int sum = a + b * c - b;
-        System.out.println("Sum: " + sum);
+        int result = a + b * c - b;
+        System.out.println("result: " + result);
     }
 }
