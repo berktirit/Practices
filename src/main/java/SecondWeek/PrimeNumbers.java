@@ -8,6 +8,7 @@ public class PrimeNumbers {
         System.out.print("Sayı Giriniz: ");
         int number = input.nextInt();
 
+        // isPrime fonksiyonu, bir sayının asal olup olmadığını kontrol eder.
         if (isPrime(number)) {
             System.out.println(number + " sayısı ASALDIR !");
         } else {
@@ -17,8 +18,11 @@ public class PrimeNumbers {
 
     public static boolean isPrime(int number) {
         if (number < 2) {
+            // 2'den küçük sayılar asal değildir.
             return false;
         }
+
+        // 2'den başlayarak n'in kareköküne kadar olan sayılara bölünür.
         for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
                 return false;
