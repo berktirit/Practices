@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class FindingLetters {
     public static void main(String[] args) {
+
+        // ArrayList'e eklenen 4 kelime, ayrıca Arrays.asList() kullanımıyla daha hızlı veri tanımı ve daha kısa kod elde edilir.
         List<String> wordList = new ArrayList<>(Arrays.asList("Patika", "Java", "Spring", "Methods"));
         Scanner input = new Scanner(System.in);
 
